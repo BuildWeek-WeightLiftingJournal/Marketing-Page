@@ -1,37 +1,34 @@
 nav {
     display: flex;
     justify-content: space-between;
-    background: @blackish;
-    color: white;
+    .colors(@blackish, white);
     position: sticky;
     top: 0;
     padding: 0.25rem 1rem;
 
-
     @media @mobile{
         flex-direction: column;
         align-items: center;
-    }
+    }//end of nav media mobile
    
  
-    .navbar-left {
+    .navbar-left_about {
         display: flex;
         align-items: center;
 
         @media @mobile{
             flex-direction: column-reverse;
-            align-items: center;
-        }
+        }//end of navbar-left media mobile
 
-        .logo {
+        .logo_about {
             width: 80%;
             height: 80%;
 
             @media @mobile{
                 display: none;
-            }
+            }//end of logo media mobile
         }//End of logo
-        .nav-title {
+        .nav-title_about {
             padding-left: 1rem;
             font-weight: bold;
             font-size: 2rem;
@@ -39,26 +36,25 @@ nav {
             @media @mobile{
                 padding: 0rem;
                 color: @reddish;
-            }
+            }//end of nav-title media mobile
         }//End of nav title
     }//End of navbar-left
 
-    .navbar-right {
+    .navbar-right_about {
         display: flex;
         align-items: center;
     
         @media @mobile {
             flex-direction: column;
-        }
+        }//end of navbar-right media mobile
 
-        .nav-link {
+        .nav-link_about {
+            .worddetails(1.5rem, none);
             padding-left: 1rem;
-            font-size: 1.5rem;
-            text-decoration: none;
             color: white;
         }//End of nav-link
 
-         .nav-link:hover {
+         .nav-link_about:hover {
             color: @reddish;
         }//End of nav-link:hover
     }//End of navbar-right
@@ -82,13 +78,13 @@ nav {
 //         i{
 //             color: @reddish;
 //             font-size: 2rem;
-//         }
+//         }//end of i
 
 //         h2{
 //             color: white;
 //             font-size: 2rem;
-//         }
-//     }
+//         }//end of h2
+//     }//end of TitleNav
 
 //     .links{
 //         width: 25%;
@@ -98,7 +94,7 @@ nav {
 //             color: white;
 //             font-size: 1.6rem;
 //             text-decoration: none;
-//         }
-//     }
-// }
+//         }//end of a
+//     }//end of links
+// }//end of Vanessa's nav
 

@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  font-family: "Helvetica Neue";
   width: 100%;
   margin: 0 auto;
 }
@@ -148,14 +149,13 @@ h4 {
   font-size: 1.8rem;
 }
 p {
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 1.6rem;
-  padding-bottom: 10px;
 }
 nav {
   display: flex;
   justify-content: space-between;
-  background: #35373B;
+  background-color: #35373B;
   color: white;
   position: sticky;
   top: 0;
@@ -167,109 +167,148 @@ nav {
     align-items: center;
   }
 }
-nav .navbar-left {
+nav .navbar-left_about {
   display: flex;
   align-items: center;
 }
 @media (max-width: 500px) {
-  nav .navbar-left {
+  nav .navbar-left_about {
     flex-direction: column-reverse;
-    align-items: center;
   }
 }
-nav .navbar-left .logo {
+nav .navbar-left_about .logo_about {
   width: 80%;
   height: 80%;
 }
 @media (max-width: 500px) {
-  nav .navbar-left .logo {
+  nav .navbar-left_about .logo_about {
     display: none;
   }
 }
-nav .navbar-left .nav-title {
+nav .navbar-left_about .nav-title_about {
   padding-left: 1rem;
   font-weight: bold;
   font-size: 2rem;
 }
 @media (max-width: 500px) {
-  nav .navbar-left .nav-title {
+  nav .navbar-left_about .nav-title_about {
     padding: 0rem;
     color: #FF5B7B;
   }
 }
-nav .navbar-right {
+nav .navbar-right_about {
   display: flex;
   align-items: center;
 }
 @media (max-width: 500px) {
-  nav .navbar-right {
+  nav .navbar-right_about {
     flex-direction: column;
   }
 }
-nav .navbar-right .nav-link {
-  padding-left: 1rem;
+nav .navbar-right_about .nav-link_about {
   font-size: 1.5rem;
   text-decoration: none;
+  padding-left: 1rem;
   color: white;
 }
-nav .navbar-right .nav-link:hover {
+nav .navbar-right_about .nav-link_about:hover {
   color: #FF5B7B;
 }
 .AboutUsBox {
-  border: 2px solid black;
-  max-width: 800px;
+  max-width: 65%;
   width: 100%;
   margin: 0 auto;
 }
+.AboutUsBox .Headerimg_about {
+  padding-bottom: 4%;
+}
 @media (max-width: 500px) {
-  .AboutUsBox .Headerimg {
+  .AboutUsBox .Headerimg_about {
     display: none;
   }
 }
-.AboutUsBox .Title {
+.AboutUsBox .Title_about {
   text-align: center;
   color: #FF5B7B;
+  text-shadow: 0.2rem 0.1rem 0.2rem #35373B;
 }
-.AboutUsBox .PersonBoxes {
-  border: 2px solid red;
+.AboutUsBox .PersonBoxes_about {
+  padding: 6%, 0%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   justify-content: space-around;
 }
 @media (max-width: 500px) {
-  .AboutUsBox .PersonBoxes {
+  .AboutUsBox .PersonBoxes_about {
     display: column;
   }
 }
-.AboutUsBox .PersonBoxes .box {
-  border: 2px solid navy;
-  width: 45%;
+.AboutUsBox .PersonBoxes_about .box_about {
+  background-color: #F3BE70;
+  color: #35373B;
+  border-radius: 7%;
+  width: 40%;
   text-align: center;
+  padding-top: 3%;
   margin: 3% 0%;
+  box-shadow: 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (max-width: 500px) {
-  .AboutUsBox .PersonBoxes .box {
+  .AboutUsBox .PersonBoxes_about .box_about {
     width: 80%;
   }
 }
-.AboutUsBox .PersonBoxes .box img {
-  width: 75%;
+.AboutUsBox .PersonBoxes_about .box_about img {
   border-radius: 4%;
+  width: 60%;
 }
 @media (max-width: 500px) {
-  .AboutUsBox .PersonBoxes .box img {
-    width: 60%;
+  .AboutUsBox .PersonBoxes_about .box_about img {
+    width: 55%;
   }
 }
-.footer {
-  width: 100%;
-  border-top: 2px solid lightgray;
-  background-color: #35373B;
+.AboutUsBox .PersonBoxes_about .box_about h3 {
+  line-height: 2rem;
+  font-weight: bold;
+  padding-top: 3%;
 }
-.footer p {
-  text-align: center;
+.AboutUsBox .PersonBoxes_about .box_about h4 {
+  font-style: italic;
+}
+.AboutUsBox .PersonBoxes_about .box_about p {
+  line-height: 5rem;
+}
+.AboutUsBox .PersonBoxes_about .box_about .button_about {
+  border-radius: 8%;
+  width: 35%;
   font-size: 1.6rem;
-  padding: 20px;
+  text-decoration: none;
+  background-color: #35373B;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .AboutUsBox .PersonBoxes_about .box_about .button_about {
+    width: 45%;
+  }
+}
+.AboutUsBox .PersonBoxes_about .box_about .button_about a {
+  text-decoration: none;
   color: white;
+}
+.AboutUsBox .PersonBoxes_about .box_about .button_about a:hover {
+  color: #FF5B7B;
+}
+.footer_about {
+  width: 100%;
+  margin-top: 4%;
+  background-color: #35373B;
+  color: white;
+}
+.footer_about p {
+  text-align: center;
+  padding: 2%;
 }
