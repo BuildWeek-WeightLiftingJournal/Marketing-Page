@@ -1,0 +1,104 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: @blackish;
+    color: white;
+    position: sticky;
+    top: 0;
+    padding: 0.25rem 1rem;
+
+
+    @media @mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+ 
+    .navbar-left {
+        display: flex;
+        align-items: center;
+
+        @media @mobile{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .logo {
+            width: 80%;
+            height: 80%;
+
+            @media @mobile{
+                display: none;
+            }
+        }//End of logo
+        .nav-title {
+            padding-left: 1rem;
+            font-weight: bold;
+            font-size: 2rem;
+
+            @media @mobile{
+                padding: 0rem;
+                color: @reddish;
+            }
+        }//End of nav title
+    }//End of navbar-left
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+    
+        @media @mobile {
+            flex-direction: column;
+        }
+
+        .nav-link {
+            padding-left: 1rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+        }//End of nav-link
+
+         .nav-link:hover {
+            color: @reddish;
+        }//End of nav-link:hover
+    }//End of navbar-right
+}//End of Nav
+
+
+
+// Nav Vanessa wrote: 
+//.nav{
+//     margin: 0 auto;
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     background-color: @blackish;
+//     padding: 1.5%;
+
+//     .TitleNav{
+//         width: 20%;
+//         display: flex;
+//         justify-content: space-around;
+//         i{
+//             color: @reddish;
+//             font-size: 2rem;
+//         }
+
+//         h2{
+//             color: white;
+//             font-size: 2rem;
+//         }
+//     }
+
+//     .links{
+//         width: 25%;
+//         display: flex;
+//         justify-content: space-between;
+//         a{
+//             color: white;
+//             font-size: 1.6rem;
+//             text-decoration: none;
+//         }
+//     }
+// }
+
