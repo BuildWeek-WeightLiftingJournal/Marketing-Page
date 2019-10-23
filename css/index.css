@@ -198,6 +198,11 @@ footer {
   margin-bottom: 30px;
   text-align: center;
 }
+@media (max-width: 800px) {
+  footer {
+    margin-top: 5%;
+  }
+}
 .copyright-container {
   display: flex;
   align-items: center;
@@ -223,6 +228,11 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 500px) {
+  .bg {
+    height: 100vh;
+  }
+}
 .landing-main {
   display: flex;
   flex-direction: column;
@@ -232,7 +242,7 @@ footer {
 .main-heading-container {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: #FFFFFF;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
@@ -240,23 +250,47 @@ footer {
   margin-bottom: 3em;
   margin-top: 12%;
 }
+@media (max-width: 500px) {
+  .main-heading-container {
+    width: 80%;
+  }
+}
 .main-heading-container h1 {
   font-size: 5rem;
   padding-bottom: 0.5em;
 }
+@media (max-width: 500px) {
+  .main-heading-container h1 {
+    font-size: 5.5rem;
+  }
+}
 .main-heading-container h3 {
-  font-size: 2em;
+  font-size: 2rem;
   padding-bottom: 1em;
 }
-.btn-top {
-  padding: 1em 4em 1em 4em;
-  width: 100%;
+@media (max-width: 500px) {
+  .main-heading-container h3 {
+    font-size: 3.5rem;
+  }
+}
+.topSignUp {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 45px;
   background: #ff5b7b;
-  border: none;
-  border-radius: 0.5em;
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
+  color: #FFFFFF;
+  border: 1px solid #C0C0C0;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+.topSignUp:hover {
+  background: #F3BE70;
+  color: #35373B;
 }
 /* MOBILE APP SECTION STYLING ---------------------------------------------*/
 .mobile-content {
@@ -266,22 +300,53 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .mobile-content {
+    height: 100%;
+    padding-top: 2em;
+  }
+}
 .mobile-top {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .mobile-top {
+    height: 100%;
+  }
+}
+.mobile-top h1 {
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .mobile-top h1 {
+    font-size: 2.5rem;
+  }
+}
 .mobile-bottom {
   height: 70%;
   display: flex;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .mobile-bottom {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .mb-left {
   height: 100%;
   width: 50%;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .mb-left {
+    width: 100%;
+    margin: 3%;
+  }
 }
 .mb-right {
   height: 100%;
@@ -292,47 +357,83 @@ footer {
   text-align: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 5%;
 }
-.btn-middle {
-  padding: 1em 5em 1em 5em;
-  width: 100%;
+@media (max-width: 500px) {
+  .mb-right {
+    width: 100%;
+  }
+}
+.midSignUp {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
   background: #ff5b7b;
-  border: none;
-  border-radius: 0.5em;
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
+  color: #FFFFFF;
+  border: 1px solid #C0C0C0;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+.midSignUp:hover {
+  background: #F3BE70;
+  color: #35373B;
+}
+@media (max-width: 500px) {
+  .midSignUp {
+    width: 250px;
+  }
 }
 .mb-right * {
   text-decoration: none;
 }
-.btn:focus {
-  outline: none;
-}
-.btn:hover {
-  background: #F3BE70;
-  color: #333333;
-  cursor: pointer;
-}
 .mb-right h4 {
-  font-size: 2em;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .mb-right h4 {
+    font-size: 2.5rem;
+    padding-bottom: 0.75em;
+  }
 }
 .mb-right p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .mb-right p {
+    text-align: left;
+    padding-bottom: 3%;
+    font-size: 1.9rem;
+    margin: 0 5px 0 0;
+  }
 }
 .mb-right a {
   display: flex;
 }
 .mobile-top h1 {
-  font-size: 2.5em;
+  font-size: 2.5 em;
 }
 .phone-img-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .phone-img-container {
+    margin-left: 6px;
+  }
+}
 .phone-img {
   height: 100%;
+}
+@media (max-width: 500px) {
+  .phone-img {
+    height: auto;
+  }
 }
 .ex {
   display: none;
@@ -350,11 +451,26 @@ footer {
   height: 100vh;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .features-container {
+    height: 100%;
+  }
+}
 .features-bg-container {
   background: #35373B;
   height: 75%;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .features-bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    font-size: 1.2rem;
+  }
 }
 .features-info-box {
   width: 20%;
@@ -365,6 +481,17 @@ footer {
   align-items: center;
   padding-bottom: 1em;
   font-size: 1.5em;
+}
+@media (max-width: 500px) {
+  .features-info-box {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .dumbell {
+    width: 80px;
+    margin-top: 3%;
+  }
 }
 .features-info-box h4 {
   text-align: center;
@@ -390,20 +517,41 @@ footer {
 .quote-container h4 {
   padding-bottom: 0.5em;
 }
-.btn-bottom {
+.quote-container .btn-parent {
+  margin-left: 45%;
+}
+@media (max-width: 800px) {
+  .quote-container .btn-parent {
+    margin-left: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .quote-container .btn-parent {
+    margin-left: 20%;
+    margin-top: 3%;
+  }
+}
+.botSignUp {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
   background: #ff5b7b;
-  border: none;
-  border-radius: 0.5em;
-  color: white;
-  font-size: 1rem;
-  padding: 1em 4em 1em 4em;
-  font-weight: bold;
-}
-.btn-bottom:focus {
-  outline: none;
-}
-.btn-bottom:hover {
-  background: #F3BE70;
-  color: #333333;
+  color: #FFFFFF;
+  border: 1px solid #C0C0C0;
   cursor: pointer;
+  font-size: 1.8rem;
+}
+.botSignUp:hover {
+  background: #F3BE70;
+  color: #35373B;
+}
+@media (max-width: 500px) {
+  .botSignUp {
+    width: 300px;
+  }
 }
