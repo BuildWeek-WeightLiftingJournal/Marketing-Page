@@ -1,6 +1,6 @@
 .bg {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    // url(http://www.healthylivingheavylifting.com/wp-content/uploads/2016/05/Jay-Cutler-Workout.jpg);
+    // url("http://www.healthylivingheavylifting.com/wp-content/uploads/2016/05/Jay-Cutler-Workout.jpg");
     url(../images/marketingPg-main.jpg);
   height: 100vh;
   background-attachment: fixed;
@@ -19,7 +19,7 @@
 .main-heading-container {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: @main-bg;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
@@ -38,17 +38,12 @@
   padding-bottom: 1em;
 }
 
+// top button
+.topSignUp {
+  .custom-btn(#ff5b7b, 200px, #FFFFFF, 1.8rem, );
 
-.btn-top {
-  padding: 1em 4em 1em 4em;
-  width: 100%;
-  background: #ff5b7b;
-  border: none;
-  border-radius: 0.5em;
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
 }
+
 
 /* MOBILE APP SECTION STYLING ---------------------------------------------*/
 
@@ -68,13 +63,15 @@
   align-items: center;
 }
 
+.mobile-top h1 {
+  font-size: 2.5rem;
+}
+
 .mobile-bottom {
   height: 70%;
   display: flex;
   align-items: center;
 }
-
-
 
 .mb-left {
   height: 100%;
@@ -92,39 +89,29 @@
   text-align: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 5%;
 }
 
-.btn-middle {
-  padding: 1em 5em 1em 5em;
-  width: 100%;
-  background: #ff5b7b;
-  border: none;
-  border-radius: 0.5em;
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
+//middle content button
+.midSignUp {
+  .custom-btn(#ff5b7b, 150px, #FFFFFF, 1.8rem, );
+
 }
 
 .mb-right * {
   text-decoration: none;
 }
 
-.btn:focus {
-  outline: none;
-}
-
-.btn:hover {
-  background: #F3BE70;
-  color: #333333;
-  cursor: pointer;
-}
+// .btn:focus {
+//   outline: none;
+// }
 
 .mb-right h4 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .mb-right p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .mb-right a {
@@ -132,7 +119,7 @@
 }
 
 .mobile-top h1 {
-  font-size: 2.5em;
+  font-size: 2.5 em;
 }
 
 .phone-img-container {
@@ -213,24 +200,11 @@
   padding-bottom: 0.5em;
 }
 
-
-.btn-bottom {
-  background: #ff5b7b;
-  border: none;
-  border-radius: 0.5em;
-  color: white;
-  font-size: 1rem;
-  padding: 1em 4em 1em 4em;
-  font-weight: bold;
+.quote-container .btn-parent {
+  margin-left: 45%;
 }
 
-.btn-bottom:focus {
-  outline: none;
-}
+.botSignUp {
+  .custom-btn(#ff5b7b, 150px, #FFFFFF, 1.8rem, );
 
-
-.btn-bottom:hover {
-  background: #F3BE70;
-  color: #333333;
-  cursor: pointer;
 }
