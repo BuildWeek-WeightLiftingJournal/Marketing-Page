@@ -7,6 +7,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media @mobile {
+    height: 100vh;
+  }
 }
 
 .landing-main {
@@ -26,16 +30,31 @@
   width: 40%;
   margin-bottom: 3em;
   margin-top: 12%;
+
+  @media @mobile {
+    width: 80%;
+
+  }
 }
 
 .main-heading-container h1 {
   font-size: 5rem;
   padding-bottom: 0.5em;
+
+  @media @mobile {
+    font-size: 5.5rem;
+
+  }
 }
 
 .main-heading-container h3 {
-  font-size: 2em;
+  font-size: 2rem;
   padding-bottom: 1em;
+
+  @media @mobile {
+    font-size: 3.5rem;
+
+  }
 }
 
 // top button
@@ -54,23 +73,48 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+
+  @media @mobile {
+    height: 100%;
+    padding-top: 2em;
+
+  }
 }
+
+
+
 
 .mobile-top {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
+
+  @media @mobile {
+    height: 100%;
+
+  }
+
 }
 
 .mobile-top h1 {
   font-size: 2.5rem;
+
+  @media @mobile {
+    font-size: 2.5rem;
+  }
 }
 
 .mobile-bottom {
   height: 70%;
   display: flex;
   align-items: center;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 .mb-left {
@@ -78,6 +122,11 @@
   width: 50%;
   display: flex;
   justify-content: center;
+
+  @media @mobile {
+    width: 100%;
+    margin: 3%;
+  }
 }
 
 .mb-right {
@@ -90,12 +139,19 @@
   align-items: center;
   flex-direction: column;
   margin-left: 5%;
+
+  @media @mobile {
+    width: 100%;
+  }
 }
 
 //middle content button
 .midSignUp {
   .custom-btn(#ff5b7b, 150px, #FFFFFF, 1.8rem, );
 
+  @media @mobile {
+    width: 250px;
+  }
 }
 
 .mb-right * {
@@ -108,10 +164,23 @@
 
 .mb-right h4 {
   font-size: 2rem;
+
+  @media @mobile {
+    font-size: 2.5rem;
+    padding-bottom: 0.75em;
+  }
+
 }
 
 .mb-right p {
   font-size: 1.8rem;
+
+  @media @mobile {
+    text-align: left;
+    padding-bottom: 3%;
+    font-size: 1.9rem;
+    margin: 0 5px 0 0;
+  }
 }
 
 .mb-right a {
@@ -126,10 +195,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media @mobile {
+    margin-left: 6px;
+  }
 }
 
 .phone-img {
   height: 100%;
+
+  @media @mobile {
+    height: auto;
+  }
+
 }
 
 .ex {
@@ -150,6 +228,10 @@
 .features-container {
   height: 100vh;
   width: 100%;
+
+  @media @mobile {
+    height: 100%;
+  }
 }
 
 .features-bg-container {
@@ -157,6 +239,16 @@
   height: 75%;
   display: flex;
   justify-content: space-evenly;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    font-size: 1.2rem;
+  }
+
 }
 
 .features-info-box {
@@ -168,6 +260,17 @@
   align-items: center;
   padding-bottom: 1em;
   font-size: 1.5em;
+
+  @media @mobile {
+    width: 100%;
+  }
+}
+
+.dumbell {
+  @media @mobile {
+    width: 80px;
+    margin-top: 3%;
+  }
 }
 
 .features-info-box h4 {
@@ -202,9 +305,23 @@
 
 .quote-container .btn-parent {
   margin-left: 45%;
+
+
+  @media @mobileTabl {
+    margin-left: 40%;
+  }
+
+  @media @mobile {
+    margin-left: 20%;
+    margin-top: 3%;
+  }
 }
 
 .botSignUp {
   .custom-btn(#ff5b7b, 150px, #FFFFFF, 1.8rem, );
+
+  @media @mobile {
+    width: 300px;
+  }
 
 }
