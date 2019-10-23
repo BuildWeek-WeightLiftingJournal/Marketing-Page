@@ -1,0 +1,89 @@
+.AboutUsBox{
+    max-width: 65%;
+    width: 100%;
+    margin: 0 auto;
+
+    .Headerimg_about{
+        padding-bottom: 4%;
+        
+        @media @mobile{
+            display: none;
+        }//end of Headerimg media mobile
+   }//End of Headerimg  
+
+    .Title_about{
+        text-align: center;
+        color: @reddish;
+        text-shadow: .2rem .1rem .2rem @blackish;
+    }//End of Title
+
+    .PersonBoxes_about{
+    padding: 6%, 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @media @mobile{
+        display: column;
+    }//end of PersonsBoxes media mobile
+
+  
+        .box_about{
+            .colors(@mustard, @blackish);
+            .boxEdits(7%, 40%);
+            text-align: center;
+            padding-top: 3%;
+            margin: 3% 0%;
+            box-shadow: 1rem 1.5rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media @mobile{
+                width: 80%;
+            }//end of box media mobile
+
+            img{
+                .boxEdits(4%, 60%);
+                @media @mobile{
+                    width: 55%;
+                }//end of img media mobile
+            }//end of img
+ 
+            h3{
+                line-height: 2rem;
+                font-weight: bold;
+                padding-top: 3%;
+            }//end of h3
+
+            h4{
+                font-style: italic;
+            }//end of h4
+
+            p{
+                line-height: 5rem;
+            }//end of p
+
+            .button_about{
+                .boxEdits(8%, 35%);
+                .worddetails(1.6rem, none);
+                background-color: @blackish;
+                padding: 2%;
+                margin-bottom: 5%;
+
+                @media @mobile{
+                    width: 45%;
+                }
+
+                a{
+                     text-decoration: none;
+                     color: white;      
+                }//end of a
+
+                a:hover { 
+                    color: @reddish;
+                     }//end of a:hover
+            }//end of button
+        }//End of box
+    }//End of PersonBoxes
+}//End of About Us Boxes
